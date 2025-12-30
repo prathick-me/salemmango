@@ -1,0 +1,225 @@
+    :root {
+            --mango-yellow: #FFC107;
+            --mango-dark: #FF9800;
+            --leaf-green: #2E7D32;
+            --light-green: #81C784;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .search-bar {
+            border-radius: 20px;
+            border: 1px solid var(--mango-yellow);
+        }
+        .top-icons i {
+            font-size: 1.3rem;
+            color: var(--leaf-green);
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        /* Menu Bar */
+        .navbar {
+            background-color: var(--leaf-green) !important;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0 10px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: var(--mango-yellow) !important;
+        }
+
+        /* Slider */
+        .carousel-item {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        .slider-overlay {
+            background: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .fancy-font {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--mango-yellow);
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+            font-style: italic;
+        }
+
+        /* Sections */
+        .section-padding { padding: 60px 0; }
+        .btn-mango {
+            background-color: var(--mango-yellow);
+            color: #000;
+            font-weight: bold;
+            border-radius: 25px;
+        }
+        .btn-mango:hover { background-color: var(--mango-dark); }
+
+        /* Product Card */
+        .product-card {
+            border: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .product-card:hover { transform: translateY(-10px); }
+        .offer-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: red;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        /* Collage Section */
+        .collage-img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: 0.5s;
+        }
+        .collage-container { position: relative; overflow: hidden; border-radius: 15px; }
+        .collage-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+
+        footer { background: #1a1a1a; color: white; padding: 40px 0 20px; }
+
+        @media (max-width: 768px) {
+            .fancy-font { font-size: 2.5rem; }
+            .carousel-item { height: 300px; }
+        }
+
+       /* Section styling */
+/* Simple Slider CSS */
+.custom-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+    padding: 20px 0;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome/Safari */
+}
+
+@media (min-width: 768px) {
+    .slider-card { flex: 0 0 50%; } /* Tablet: 2 cards */
+}
+
+@media (min-width: 992px) {
+    .slider-card { flex: 0 0 25%; } /* Desktop: 4 cards */
+}
+
+/* Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2E7D32;
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.slider-btn:hover { background: #FFC107; color: #000; }
+.slider-btn.prev { left: 5px; }
+.slider-btn.next { right: 5px; }
+
+
+/* Card Uniformity */
+.img-container {
+    height: 200px; /* Adjust based on preference */
+    overflow: hidden;
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This makes all images uniform without stretching */
+}
+
+.product-card {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+    transition: 0.3s ease;
+    background: #fff;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12) !important;
+}
+
+/* Stylish Buy Button */
+.buy-btn-stylish {
+    background-color: var(--leaf-green);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px; /* Slightly rounded square look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(46, 125, 50, 0.3);
+}
+
+.buy-btn-stylish:hover {
+    background-color: var(--mango-yellow);
+    color: #000;
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 6px 15px rgba(255, 193, 7, 0.4);
+}
+
+/* Slider Spacing Fix */
+.slider-card {
+    flex: 0 0 25%; /* 4 cards per row */
+    padding: 15px; /* Even spacing between cards */
+}
+
+@media (max-width: 992px) { .slider-card { flex: 0 0 50%; } }
+@media (max-width: 576px) { .slider-card { flex: 0 0 100%; } }
