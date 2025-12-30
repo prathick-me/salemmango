@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangoStore | Fresh & Organic</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts: Fancy Serif for Slider & Clean Sans for Body -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between">
+            <div class="logo">
+                <h3 class="fw-bold m-0" style="color: var(--leaf-green);">MANGO<span style="color: var(--mango-yellow);">STORE</span></h3>
+            </div>
+            <div class="col-12 col-md-4 my-2 my-md-0">
+                <div class="input-group">
+                    <input type="text" class="form-control search-bar" placeholder="Search fresh mangoes...">
+                    <button class="btn border-0 position-absolute end-0 z-3" type="button"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="top-icons d-flex align-items-center">
+                <i class="bi bi-geo-alt" title="Location"></i>
+                <i class="bi bi-heart" title="Wishlist"></i>
+                <div class="position-relative">
+                    <i class="bi bi-cart3" title="Cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Shop by Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shop">Shop Now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="mangoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=1300&q=80');">
+                <div class="slider-overlay">
+                    <div class="text-center">
+                        <h1 class="fancy-font">King of Fruits</h1>
+                        <p class="text-white fs-4">Sweet, Juicy & Sun-Ripened</p>
+                        <button class="btn btn-mango btn-lg mt-3">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?auto=format&fit=crop&w=1300&q=80');">
+                <div class="slider-overlay">
+                    <div class="text-center">
+                        <h1 class="fancy-font">100% Organic Farm Fresh</h1>
+                        <p class="text-white fs-4">Straight from our orchards to your doorstep</p>
+                        <button class="btn btn-mango btn-lg mt-3">Explore Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mangoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mangoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-4" style="color: var(--leaf-green);">About Our Mango Store</h2>
+                <p>Since 1995, we have been dedicated to bringing the finest varieties of mangoes to your table. Our fruits are hand-picked, naturally ripened, and free from harmful chemicals. We believe in quality that you can taste.</p>
+                <p>From the world-famous Alphonso to the sweet Kesar, we provide only the best quality across India.</p>
+                <button class="btn btn-outline-success">Read More</button>
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img src="https://images.unsplash.com/photo-1591073113125-e46713c829ed?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded shadow" alt="About Mangoes">
+            </div>
+        </div>
+    </section>
+
+  
+  <!-- Product List Section -->
+<section id="shop" class="section-padding bg-light">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="color: #2E7D32;">Our Premium Mango Collection</h2>
+        
+        <div id="mangoProductCarousel" class="custom-slider">
+            <div class="slider-wrapper">
+                
+                <!-- 1. Ratnagiri Alphonso -->
+                 <div class="slider-card">
+                    <div class="card product-card h-100">
+                        <span class="offer-badge">20% OFF</span>
+                        <div class="img-container">
+                             <img src="./images/kilimooku.jpg" class="card-img-top" alt="Alphonso">
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h6 class="fw-bold text-dark">Ratnagiri Alphonso</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="price-box">
+                                    <span class="text-success fw-bold fs-5">₹800</span>
+                                    <small class="text-muted text-decoration-line-through ms-1">₹1000</small>
+                                </div>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Kesar Mango -->
+                <div class="slider-card">
+                    <div class="card product-card h-100">
+                        <span class="offer-badge">10% OFF</span>
+                        <div class="img-container">
+                            <img src="./images/kesar.jpg" class="card-img-top" alt="Kesar">
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <h6 class="fw-bold">Kesar Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹650 <small class="text-muted text-decoration-line-through">₹720</small></span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Avakai Pickle Mango -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">New</span>
+                        <img src="./images/avaki.jpg" class="card-img-top" alt="Avakai">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Avakai Pickle Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹150/kg</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Kilimooku / Totapuri -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">Fresh</span>
+                        <img src="./images/kilimooku.jpg" class="card-img-top" alt="Totapuri">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Kilimooku Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹120/kg</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Sendura -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">Sweet</span>
+                        <img src="./images/sendurai.jpg" class="card-img-top" alt="Sendura">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Sendura Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹200/kg</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Salem Gundu Vadu -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">Rare</span>
+                        <img src="./images/salem.jpeg" class="card-img-top" alt="Salem">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Salem Gundu Vadu</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹300/kg</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Miyazaki -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">Premium</span>
+                        <img src="./images/miyazi.jpg" class="card-img-top" alt="Miyazaki">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Miyazaki Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹2500/pc</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Sindhura -->
+                <div class="slider-card">
+                    <div class="card product-card">
+                        <span class="offer-badge">Hot</span>
+                        <img src="./images/sindurai.jpg" class="card-img-top" alt="Sindhura">
+                        <div class="card-body">
+                            <h6 class="fw-bold">Sindhura Mango</h6>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="text-success fw-bold">₹180/kg</span>
+                                <button class="buy-btn-stylish"><i class="bi bi-cart-plus-fill"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Custom Navigation Buttons -->
+            <button class="slider-btn prev" onclick="moveSlider(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn next" onclick="moveSlider(1)"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+            
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#mangoProductCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mangoProductCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+    <!-- Collage Section -->
+    <section class="section-padding container">
+        <h2 class="text-center fw-bold mb-5">Why Choose Our Mangoes?</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="collage-container">
+                    <img src="./images/choose.jpg" class="collage-img" alt="Fresh">
+                    <div class="collage-text">Freshly Harvested</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="collage-container">
+                    <img src="./images/organic.jpg" class="collage-img" alt="Organic">
+                    <div class="collage-text">100% Organic</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="collage-container">
+                    <img src="./images/natural.png" class="collage-img" alt="Natural">
+                    <div class="collage-text">Purely Natural</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="fw-bold" style="color: var(--leaf-green);">Get In Touch</h3>
+                    <p>Have questions? Reach out to us for bulk orders!</p>
+                    <div class="d-flex justify-content-center gap-4 mt-4">
+                        <span><i class="bi bi-telephone-fill text-success"></i> +91 98765 43210</span>
+                        <span><i class="bi bi-envelope-fill text-success"></i> info@mangostore.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold text-warning">MangoStore</h5>
+                    <p>Delivering the sweetness of nature since 1995. We take pride in our organic farming practices.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 text-md-end">
+                    <h5>Follow Us</h5>
+                    <div class="fs-3">
+                        <i class="bi bi-facebook mx-2"></i>
+                        <i class="bi bi-instagram mx-2"></i>
+                        <i class="bi bi-whatsapp mx-2"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center m-0">© 2023 MangoStore. Created with Love for Mangoes.</p>
+        </div>
+    </footer>
+
+    
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function moveSlider(direction) {
+        const wrapper = document.querySelector('.slider-wrapper');
+        const card = document.querySelector('.slider-card');
+        const scrollAmount = card.clientWidth; // Moves by one card width
+        
+        wrapper.scrollBy({
+            left: direction * scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+    
+</script>
+</body>
+</html>
